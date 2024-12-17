@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --dark-blue: #0A1929;
+            --white: #ffffff;
+            --text-shadow: rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111927;
+            background-image:
+                    radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
+                    radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+            color: var(--white);
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--white);
+            text-shadow: 2px 2px 4px var(--text-shadow);
+        }
+
+        .header-text h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header-text p {
+            font-size: 2rem;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            padding: 60px 0 20px;
+            color: var(--white);
+            text-shadow: 2px 2px 4px var(--text-shadow);
+        }
+
+        .about {
+            display: flex;
+            padding: 40px 10% 100px;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 500px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-block {
+            margin-bottom: 30px;
+        }
+
+        .info-block h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--white);
+            text-shadow: 1px 1px 2px var(--text-shadow);
+        }
+
+        .job-experience {
+            margin-top: 30px;
+        }
+
+        .job-experience h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 2px 2px 4px var(--text-shadow);
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--white);
+            opacity: 0.9;
+        }
+        .personal-info {
+            margin-top: 30px;
+        }
+
+        .info-row {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--white);
+            opacity: 0.9;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: var(--white);
+            margin-right: 10px;
+        }
+
+        .skills-list {
+            margin-top: 10px;
+        }
+
+        .education-block {
+            margin: 20px 0;
+        }
+        .experience-section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .experience-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--white);
+            text-shadow: 2px 2px 4px var(--text-shadow);
+        }
+
+        .experience-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 50px;
+            color: var(--white);
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .grid-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <img src="/hederV4.JPG" alt="Vlada Dancer" class="header-image">
+    <div class="header-text">
+        <h1>Vlada Zhukova</h1>
+        <p>Professional dancer and choreographer</p>
+    </div>
+</header>
+
+<h2 class="section-title">About Me</h2>
+
+<section class="about">
+    <img src="/AboutMe.JPG" alt="Vlada Zhukava Dancing" class="about-image">
+    <div class="about-content">
+        <div class="personal-info">
+            <div class="info-row">
+                <span class="info-label">Date of birth:</span>
+                10.10.2000
+            </div>
+            <div class="info-row">
+                <span class="info-label">Nationality:</span>
+                Ukrainian
+            </div>
+            <div class="info-row">
+                <span class="info-label">Height:</span>
+                168 cm
+            </div>
+            <div class="info-row">
+                <span class="info-label">Weight:</span>
+                47 kg
+            </div>
+
+            <div class="education-block">
+                <span class="info-label">Education:</span>
+                <p>In 2022 completed the full course of Volodymyr Vynnychenko Central Ukrainian State Pedagogical University</p>
+                <p>Bachelor of choreography. Head of dance company.</p>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Skills:</span>
+                <p>Pro-dancer with 20 years of experience and choreographer with 7 years experience</p>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Styles:</span>
+                <p>Heels, hip-hop, house, jazz-funk, vogue, strip, go-go, folk, dancehall, modern</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="experience-section">
+    <h2>Job Experience</h2>
+    <div class="experience-text">
+        <p>2017-2021 - Ukraine (dancer in show group and choreographer in dance company)</p>
+        <p>2021 - Turkey (dancer in show group)</p>
+        <p>From October 2021 till December 2022 - Dubai (dancer in show group, choreographer and go-go)</p>
+        <p>September 2022 - Saudi Arabia (dancer at a large-scale event with the participation of the Prince of Saudi Arabia)</p>
+        <p>2023 - Turkey (dancer in show group)</p>
+        <p>2023-2024 - Dubai (go-go, dancer in show)</p>
+        <p>2024 - Turkey (freelance dancer)</p>
+        <p>From October 2024 - Dubai (dancer and choreographer)</p>
+    </div>
+
+    <div class="photo-grid">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+        <img src="/aboutV2.JPG" alt="Dance Performance 1" class="grid-image">
+
+    </div>
+</section>
+</body>
+</html>
